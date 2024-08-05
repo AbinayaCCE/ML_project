@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Indicator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Libre Baskerville', serif;
+        }
+        .background {
+            background: url('/static/images/index_page_bg.jpg') no-repeat center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 50px;
+            border-radius: 60px;
+            text-align: center;
+        }
+        .container h1 {
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .btn-primary {
+            background-color: #1c3e63;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1 style="font-size: 70px;color:#301039">Student Exam Performance Indicator</h1>
+            <p style="font-size: 35px;color: #08074f;">Welcome to our performance prediction system. Click the button below to get started.</p>
+            <a href="{{ url_for('predict_datapoint') }}" class="btn btn-primary">Click Me</a>
+        </div>
+    </div>
+</body>
+</html>
